@@ -15,34 +15,10 @@ Complete the *twins* function in the provided code. It has two parameters:
 2. An array of *n* strings named *b*.
 
 The function must return an array of strings where each index *i* (*0 ≤ i < n*) contains the string Yes if *ai* and *bi* are twins or the string No if they are not.
-
-**Input Format**
-
-The provided code reads the following input from stdin and passes it to the function:
-The first line contains an integer, *n*, denoting the number of elements in *a*.
-Each line *i* of the *n* subsequent lines (where *0 ≤ i < n*) contains a string describing *ai*.
-The next line contains an integer, *n*, denoting the number of elements in *b*.
-Each line *i* of the *n* subsequent lines (where *0 ≤ i < n*) contains a string describing *bi*.
-
-**Constraints**
-
-- *1 ≤ n ≤ 10^3*
-- *1 ≤ lengths of ai, bi ≤ 100*
-- *ai* and *bi* are *not* guaranteed to have the same length.
-- Strings *ai* and *bi* contain lowercase letters only (i.e., *a* through *z*).
  
 **Output Format**
 
 The function must return an array of strings where each index *i* (*0 ≤ i < n*) contains the string Yes if *ai* and *bi* are twins or the string No if they are not.
-
-**Sample Input 0**
-
-2
-cdab
-dcba
-2
-abcd
-abcd
 
 **Sample Output 0**
 
@@ -52,6 +28,6 @@ No
 **Explanation 0**
 
 Given *a = ["cdab", "dcba"]* and *b = ["abcd", "abcd"]*, we process each element like so:
-1. *a0 = "cdab"* and *b0 = "abcd"*: We store Yes in index 0 of the return array because *a0 = "cdab" → "adcb" → "abcd" = b0*.
-2. *a1 = "dcba"* and *b1 = "abcd"*: We store No in index *1* of the return array because no amount of operations will move a character from an odd index to an even index, so the two strings will never be equal.
+1. *a0 = "cdab"* and *b0 = "abcd"*: We store Yes in index 0 of the return array.
+2. *a1 = "dcba"* and *b1 = "abcd"*: We store No in index 1 of the return array because no amount of operations will move a character from an odd index to an even index, so the two strings will never be equal.
 We then return the array *["Yes", "No"]* as our answer.
